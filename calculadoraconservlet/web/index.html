@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .st{
+            border-width: 5px;
+            background-color: azure;
+            border-color: azure;
+            border-radius: 20px;
+            height: 60px;
+            width:150px;
+            font-size: medium;
+            font-family: sans-serif;
+        }
+    </style>
+
+    <head>
+        <title>Calculadora con servlet</title>
+    </head>
+
+<body style="font-family: sans-serif; color: lightpink; background-color: cornsilk">
+    <center><h2>Calculadora con Servlet</h2></center><br><br>
+    <form method="POST" action='ServletCalculadora'>
+        <center>
+            <br>
+            <br>
+            Primer Numero
+            <input type="number" style="width: 200px; height: 20px" name="num1" id="num1">
+            <br><br>
+            Segundo Numero
+            <input type="number" style="width: 200px; height: 20px" name="num2" id="num2">
+            <br><br>
+            Tipo de Operacion
+           <select id="opcion" name="opcion">
+            <option value="suma">suma</option>
+            <option value="resta">resta</option>
+            <option value="multiplicacion">multiplicacion</option>
+            <option value="division">division</option>
+           </select>
+            <br><br>
+            <input type=submit value="Calcular" class="st">
+        </center>
+    </form>
+</body>
+
+</html>
